@@ -309,10 +309,10 @@ body {
 .checkmark {
   visibility: hidden;
 }
-.checkmark-visible {
+.todo-item > .radio-button > .checkmark-visible {
   visibility: visible;
 }
-.todo-item > button:hover .checkmark {
+.radio-button:hover .checkmark {
   visibility: visible;
 }
 .completed-container {
@@ -475,8 +475,11 @@ body {
   button {
     color: var(--button-color);
   }
-  .todo-item > button:hover .checkmark {
+  .radio-button:hover .checkmark {
     visibility: hidden;
+  }
+  .todo-item > .radio-button > .checkmark-visible {
+    visibility: visible;
   }
   .main {
     flex-direction: column;

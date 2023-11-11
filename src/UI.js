@@ -90,7 +90,10 @@ function displayNewTodo({ title, uniqueID, isComplete }) {
     className: "todo-item",
     attr: { "data-id": uniqueID },
   });
-  const radioButton = createDomElement({ elementTag: "button" });
+  const radioButton = createDomElement({
+    elementTag: "button",
+    className: "radio-button",
+  });
   const checkIcon = createDomElement({
     elementTag: "img",
     className: "checkmark",
