@@ -302,6 +302,9 @@ body {
   height: 20px;
   width: 20px;
   border: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .checkmark {
   visibility: hidden;
@@ -471,6 +474,9 @@ body {
   }
   button {
     color: var(--button-color);
+  }
+  .todo-item > button:hover .checkmark {
+    visibility: hidden;
   }
   .main {
     flex-direction: column;
