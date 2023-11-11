@@ -6,6 +6,7 @@
   --active-color: rgb(226, 253, 239);
   --active-border-color: rgb(57, 255, 110);
   --dark-gray: rgb(71, 71, 71);
+  --button-color: rgb(23, 23, 23);
 }
 
 *,
@@ -340,6 +341,7 @@ body {
   height: 5%;
   border-radius: 8px;
   border-style: none;
+  font-weight: 400;
 }
 .todo-details > button:hover {
   background-color: var(--backboard-color);
@@ -466,6 +468,9 @@ body {
       "sidebar sidebar"
       "main main"
       "footer footer";
+  }
+  button {
+    color: var(--button-color);
   }
   .main {
     flex-direction: column;
